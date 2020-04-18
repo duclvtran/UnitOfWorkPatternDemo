@@ -13,7 +13,7 @@ namespace UnitOfWorkPatternDemo.Controllers
         private IDataServices _dataServices;
         private ITestServices _testServices;
 
-        public DataController(IDataServices dataServices)
+        public DataController(IDataServices dataServices, ITestServices testServices)
         {
             _dataServices = dataServices;
             _testServices = testServices;
