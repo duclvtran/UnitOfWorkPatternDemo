@@ -11,10 +11,12 @@ namespace UnitOfWorkPatternDemo.Controllers
     public class DataController : ApiController
     {
         private IDataServices _dataServices;
+        private ITestServices _testServices;
 
         public DataController(IDataServices dataServices)
         {
             _dataServices = dataServices;
+            _testServices = testServices;
         }
 
         [HttpPost]
@@ -23,6 +25,20 @@ namespace UnitOfWorkPatternDemo.Controllers
             try
             {
                 var model = _dataServices.List();
+                return model;
+            }
+            catch (Exception ex)
+            {
+                return ex.ToString();
+            }
+        }
+
+        [HttpPost]
+        public Object Test1()
+        {
+            try
+            {
+                var model = _testServices.List();
                 return model;
             }
             catch (Exception ex)

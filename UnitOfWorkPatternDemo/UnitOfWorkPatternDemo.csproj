@@ -113,14 +113,21 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\Context.cs" />
+    <Compile Include="Repository\IRepository2.cs" />
     <Compile Include="Repository\IRepository.cs" />
+    <Compile Include="Repository\IUnitOfWork2.cs" />
     <Compile Include="Repository\IUnitOfWork.cs" />
+    <Compile Include="Repository\Repository2.cs" />
     <Compile Include="Repository\Repository.cs" />
+    <Compile Include="Repository\UnitOfWork2.cs" />
     <Compile Include="Repository\UnitOfWork.cs" />
+    <Compile Include="Services\TestServices.cs" />
     <Compile Include="Services\DataServices.cs" />
+    <Compile Include="Services\ITestServices.cs" />
     <Compile Include="Services\IDataServices.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="libman.json" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
