@@ -10,12 +10,12 @@ namespace UnitOfWorkPatternDemo.Services
     public class TestServices //: ITestServices
     {
         private readonly IUnitOfWork2 _unitOfWork;
-        //private IRepository<Test> _imeiReponsitory;
+        private IRepository2<Test> _imeiReponsitory;
 
-        public TestServices(IUnitOfWork2 unitOfWork)
+        public TestServices(IUnitOfWork2 unitOfWork, IRepository2<Test> imeiReponsitory)
         {
             _unitOfWork = unitOfWork;
-            //_imeiReponsitory = imeiReponsitory;
+            _imeiReponsitory = imeiReponsitory;
         }
 
         public Test Get(int id)

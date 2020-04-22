@@ -18,9 +18,9 @@ namespace UnitOfWorkPatternDemo
 
             // e.g. container.RegisterType<ITestService, TestService>();
             container.RegisterType<IUnitOfWork, UnitOfWork>();
-            container.RegisterType<IUnitOfWork2<>, UnitOfWork2>();
+            container.RegisterType<IUnitOfWork2, UnitOfWork2>();
             container.RegisterType<IRepository<Test>, Repository<Test>>();
-            container.RegisterType<IRepository<Test>, Repository<Test>>();
+            container.RegisterType<IRepository2<Test>, Repository2<Test>>();
 
             container.RegisterType<IDataServices, DataServices>();
             container.RegisterType<ITestServices, TestServices>();

@@ -8,7 +8,7 @@ namespace UnitOfWorkPatternDemo.Repository
 {
     public interface IUnitOfWork2 : IDisposable
     {
-        IRepository<TEntity> GetRepository<TEntity>() where TEntity : class;
+        IRepository<T> GetRepository<T>() where T : class;
 
         void Commit();
     }
